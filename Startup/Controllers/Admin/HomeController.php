@@ -14,13 +14,14 @@ class HomeController extends AdminController{
     public $self_url = 'extension/startup/setting';
     
     public function index(Request $request,$param=''){
+        
+        // phpinfo();
 
-        $this->title('Starup');
+        $this->title('快站应用');
         
-        //permission
+        //权限
         $this->gate('startup_menu');
-        
-        //cur menu
+        //菜单
         $this->setMenu('startup_menu','index');
 
         return $this->display('index');
@@ -28,7 +29,7 @@ class HomeController extends AdminController{
     
     public function help(){
         
-        $this->title('Help');
+        $this->title('帮助');
         
         $this->setData('data_list',[]);
         

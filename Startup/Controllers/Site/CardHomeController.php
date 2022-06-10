@@ -11,7 +11,7 @@ use Log;
 use Validator;
 use Response;
 
-class ExampleController extends SiteController
+class CardHomeController extends SiteController
 {
     
     function __construct()
@@ -20,14 +20,11 @@ class ExampleController extends SiteController
         
     }
     
-    public function test(Request $request)
+    public function index(Request $request)
     {
-        $this->title('演示页面');
+        $this->title($this->data['sdcore']['settings']['site_name']);
 
-
-        $this->setData('test_data','页面测试');
-
-        return $this->display('example.test');
+        return $this->display('index');
         
     }
     

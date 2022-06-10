@@ -1,10 +1,10 @@
 <?php
-//extend auth for role's permission
+//配置相应的权限
 
 return [
 
     'user_role'=>[
-        'name'=>'user permission',
+        'name'=>'测试权限',
         'setting'=>'Gtd\Suda\Models\User@getAll',
     ],
 

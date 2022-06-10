@@ -23,7 +23,9 @@ class JobCateController extends AdminController
 {
     use TaxonomyTrait;
     
-    //set single menu
+    
+    
+    //关键参数，是否单独显示这个菜单
     public $single_extension_menu = true;
 
     public $redirect_url = 'extension/startup/jobcate';
