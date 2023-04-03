@@ -54,8 +54,8 @@ class JobCateController extends AdminController
 
         $this->setData('categories',$categories);
         
-        $this->getButtonConfig();
-        return $this->display($this->getViewConfig('list'));
+        $this->getActions();
+        return $this->display($this->getViews('list'));
     }
 
     public function viewConfig(){
@@ -73,11 +73,14 @@ class JobCateController extends AdminController
 
         $buttons = [];
     
-        $buttons['create']  = 'extension/startup/jobcate/add';
-        $buttons['update']  = 'extension/startup/jobcate/update';
-        $buttons['save']    = 'extension/startup/jobcate/save';
-        $buttons['delete']  = 'extension/startup/jobcate/delete';
-        $buttons['sort']    = 'extension/startup/jobcate/editsort';
+        $buttons['create']  = admin_url('extension/startup/jobcate/add');
+        $buttons['update']  = admin_url('extension/startup/jobcate/update');
+        $buttons['save']    = admin_url('extension/startup/jobcate/save');
+        $buttons['delete']  = admin_url('extension/startup/jobcate/delete');
+        $buttons['sort']    = admin_url('extension/startup/jobcate/editsort');
+
+        $buttons['modal_url']  = admin_url('medias/modal');
+        $buttons['upload_url'] = admin_url('medias/upload/image');
     
         return $buttons;
     }

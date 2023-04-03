@@ -14,7 +14,7 @@ return [
     
     'startup_menu'=>[
         'single'    => true,
-        'title'     => '快启动',
+        'title'     => 'Startup',
         'slug'      => 'startup_menu',
         'url'       => 'index',
         'icon_class'=> 'ion-apps',

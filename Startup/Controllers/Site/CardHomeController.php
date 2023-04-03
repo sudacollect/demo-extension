@@ -2,14 +2,11 @@
 
 namespace App\Extensions\Startup\Controllers\Site;
 
-
 use Illuminate\Http\Request;
-use App\Extensions\Startup\Controllers\SiteController;
-
-
 use Log;
 use Validator;
 use Response;
+use App\Extensions\Startup\Controllers\SiteController;
 
 class CardHomeController extends SiteController
 {
@@ -22,7 +19,8 @@ class CardHomeController extends SiteController
     
     public function index(Request $request)
     {
-        $this->title($this->data['sdcore']['settings']['site_name']);
+        
+        $this->title('Example');
 
         return $this->display('index');
         

@@ -4,8 +4,7 @@
 return [
 
     'user_role'=>[
-        'name'=>'测试权限',
-        'setting'=>'Gtd\Suda\Models\User@getAll',
+        'name'      => '测试权限',
+        'setting'   => 'Gtd\Suda\Models\User@getAll',
     ],
-
 ];

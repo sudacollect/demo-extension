@@ -2,15 +2,15 @@
 
  
 return [
-    'name'      =>  '快站',
-    'slug'      =>  'startup',
-    'description'=> '快速搭建品牌官网',
-    'version'   =>  '1.0',
+    'name'          => 'Startup',
+    'slug'          => 'startup',
+    'description'   => '演示应用',
+    'version'       => '2.0',
     
-    'date'      => '2018年8月15日',
-    'author'    =>  'suda',
-    'email'     =>  'hi@suda.run',
-    'website'   =>  'https://suda.run',
+    'date'          => '2018年8月15日',
+    'author'        => 'suda',
+    'email'         => 'hi@suda.run',
+    'website'       => 'https://suda.run',
     
     
     'setting'    => [

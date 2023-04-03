@@ -13,7 +13,7 @@ class SiteController extends SiteCtl
     
     public function index(Request $request)
     {
-        $this->title('');
+        $this->title('Example');
 
         return $this->display('index');
     }

@@ -1,10 +1,10 @@
 <?php
 
 return [
-    // [
-    //     'url'=>'extension/startup/index',
-    //     'target'=>'_self',
-    //     'icon'=>'ion-reader',
-    //     'name'=>'快站'
-    // ],
+    [
+        'url'       => 'extension/startup/index',
+        'target'    => '_self',
+        'icon'      => 'ion-telescope',
+        'name'      => 'Startup'
+    ],
 ];
