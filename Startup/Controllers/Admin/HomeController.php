@@ -9,14 +9,11 @@ use Illuminate\Support\Facades\Auth;
 use App\Extensions\Startup\Controllers\AdminController;
 use Gtd\Suda\Models\Setting;
 
-class HomeController extends AdminController{
-    
-    public $self_url = 'extension/startup/setting';
-    
+class HomeController extends AdminController
+{    
     public function index(Request $request,$param=''){
         
-        // phpinfo();
-
+        
         $this->title('快站应用');
         
         //权限

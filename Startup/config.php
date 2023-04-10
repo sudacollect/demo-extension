@@ -16,7 +16,7 @@ return [
     'setting'    => [
         'cache' => true,
         'default_page' => 'index',
-        // 'menu_style' => 'simple',   //层级简化菜单模式
+        'setting_page' => 'index',
         // 'disable_role' => 1,
     ],
     

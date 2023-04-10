@@ -1,13 +1,12 @@
 <?php
 
-$extpath = 'startup';
 $controller_prefix = "\\App\\Extensions\\Startup\\Controllers\\Admin\\";
 
 Route::group([
     'as'         => 'startup.',
     'prefix'     => 'startup',
     // 'middleware' => 'auth:api',
-], function ($router) use ($extpath,$controller_prefix) {
+], function ($router) use ($controller_prefix) {
 
     Route::get('index/{param?}', $controller_prefix.'HomeController@index');
 
